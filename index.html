@@ -9,15 +9,25 @@
 <body class="bg-gray-100 font-sans">
 
 <header class="bg-gray-900 text-white py-4">
-    <h1 class="text-center text-3xl">Welcome to My Website</h1>
+    <nav class="container mx-auto flex justify-between items-center">
+        <h1 class="text-3xl">My Website</h1>
+        <ul class="flex space-x-4">
+            <li><a href="#about" class="hover:text-gray-400">About</a></li>
+            <li><a href="#social-media" class="hover:text-gray-400">Social Media</a></li>
+            <li><a href="#others" class="hover:text-gray-400">Others</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section id="about" class="p-6 m-6 bg-white rounded shadow">
+<section id="about" class="container mx-auto p-6 mt-6 bg-white rounded shadow">
     <h2 class="text-2xl text-gray-900 mb-4">About Me</h2>
-    <p>Hello! I'm [Your Name]. I am a [your profession or hobby]. I enjoy [your interests].</p>
+    <div class="flex items-center space-x-4">
+        <img src="https://via.placeholder.com/150" alt="[Your Name]" class="w-32 h-32 rounded-full">
+        <p>Hello! I'm [Your Name]. I am a [your profession or hobby]. I enjoy [your interests].</p>
+    </div>
 </section>
 
-<section id="social-media" class="p-6 m-6 bg-white rounded shadow">
+<section id="social-media" class="container mx-auto p-6 mt-6 bg-white rounded shadow">
     <h2 class="text-2xl text-gray-900 mb-4">Social Media Links</h2>
     <div class="flex space-x-4">
         <a href="https://facebook.com/yourprofile" target="_blank">
@@ -35,10 +45,16 @@
     </div>
 </section>
 
-<section id="others" class="p-6 m-6 bg-white rounded shadow">
+<section id="others" class="container mx-auto p-6 mt-6 bg-white rounded shadow">
     <h2 class="text-2xl text-gray-900 mb-4">Others</h2>
     <p>This section can include any additional information you'd like to share, such as your blog, projects, or contact information.</p>
 </section>
+
+<footer class="bg-gray-900 text-white py-4 mt-6">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>
